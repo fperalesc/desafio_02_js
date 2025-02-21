@@ -5,7 +5,7 @@ function bordeRojo() {
   let h2 = document.getElementById("h2-Caja");
   if (borde.style.border == "") {
     borde.style.border = "2px solid red";
-    fondo.style.backgroundImage = "url(/assets/imgs/sticker_01.png)";
+    fondo.style.backgroundImage = "url(https://raw.githubusercontent.com/fperalesc/desafio_02_js/refs/heads/main/assets/imgs/fondoCaja.jpg)";
     fondo.style.backgroundSize = "cover";
     fondo.style.backgroundPositionY = "50%";
     h2.style.color = "rgb(255, 0, 0)";
