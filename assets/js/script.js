@@ -8,10 +8,12 @@ function bordeRojo() {
     fondo.style.backgroundImage = "url(assets/imgs/fondoCaja.jpg)";
     fondo.style.backgroundSize = "cover";
     fondo.style.backgroundPositionY = "50%";
-    h2.style.color = "rgb(255, 0, 0)";
-    h2.style.opacity = "0.9";
-    h2.style.textShadow = "2px 2px 2px rgb(133, 18, 16)";
-    borde.style.animations;
+    h2.style.color = "rgb(0, 0, 0)";
+    h2.style.textShadow = "0px 0px 5px rgb(255, 0, 0)";
+    borde.classList.add("tiritando");
+    setTimeout(() => {
+      borde.classList.remove("tiritando");
+    }, 500);
   } else {
     borde.style.border = "";
     fondo.style.backgroundImage = "";
