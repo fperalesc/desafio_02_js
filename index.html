@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- PROBLEMA #1 -->
+     <div id="contenedor-problema1">
+    <h2 id="h2-Caja">Haz Click en la imagen</h2>
+    <div id="div-caja">
+      <img
+        onclick="bordeRojo()"
+        id="caja"
+        src="./assets/imgs/caja.png"
+        alt="mujer atrapada dentro de una caja"
+      />
+    </div>
+</div>
+    <hr />
+
+    <!-- PROBLEMA #2 -->
+    <div id="contenedor-problema2">
+    <h2 id="h2-Stickers">Selecciona un máximo de 10 stickers en total</h2>
+    <div id="stickersContainer">
+      <div class="contenedorSticker">
+        <img class="sticker" src="./assets/imgs/sticker_01.png" alt="" />
+       <p>Sticker Mushroom Skulls</p>
+        <div>
+           <label class="label-sticker" for="sticker1">Cantidad:</label>
+           <input id="sticker1" type="number" min="0" max="10"/>
+
+       </div>
+      </div>
+
+      <div class="contenedorSticker">
+        <img class="sticker" src="./assets/imgs/sticker_02.png" alt="" />
+        <p>Sticker Animals Skulls</p>
+        <div>
+            <label class="label-sticker" for="sticker2">Cantidad:</label>
+            <input id="sticker2" type="number" min="0" max="10"/>
+
+        </div>
+        
+      </div>
+
+      <div class="contenedorSticker">
+        <img class="sticker" src="./assets/imgs/sticker_03.png" alt="" />
+        <p>Sticker Third Eye Cat</p>
+        <div>
+            <label class="label-sticker" for="sticker3">Cantidad:</label>
+            <input id="sticker3" type="number" min="0" max="10"/>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="div-mensaje">
+        <p>¡Haz Click en el botón para verificar la cantidad de stickers seleccionados!</p>
+        <p id="mensaje">Llevas 0 stickers</p>
+        <button onclick="verificacion()">Verificar</button>
+    </div>
+</div>
+    <hr>
+    <!-- PROBLEMA #3 -->
+<div id="contenedor-problema3">
+<h2>Ingresa la constraseña</h2>
+
+<div>
+    <select name="num1" id="num1">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select name="num2" id="num2">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select name="num3" id="num3">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+</div>
+<button onclick="passVerification()">Ingresar</button>
+<p id="mensaje-pass"></p>
+</div>
+  </body>
+</html>
