@@ -5,7 +5,7 @@ function bordeRojo() {
   let h2 = document.getElementById("h2-Caja");
   if (borde.style.border == "") {
     borde.style.border = "2px solid red";
-    fondo.style.backgroundImage = "url(/assets/imgs/fondoCaja.jpg)";
+    fondo.style.backgroundImage = "url(/assets/imgs/fondoCaja.png)";
     fondo.style.backgroundSize = "cover";
     fondo.style.backgroundPositionY = "50%";
     h2.style.color = "rgb(255, 0, 0)";
