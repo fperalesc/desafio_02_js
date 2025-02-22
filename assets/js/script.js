@@ -37,18 +37,22 @@ function verificacion() {
   ) {
     mensaje.innerText = `Llevas ${sticker1 + sticker2 + sticker3} stickers`;
     mensaje.style.color = "black";
+    mensaje.style.fontWeight = "normal";
   } else if (sticker1 + sticker2 + sticker3 > 10) {
     mensaje.innerText = `¡Llevas demasiados stickers (${
       sticker1 + sticker2 + sticker3
     })! Puedes llevar un máximo de 10 unidades`;
-    mensaje.style.color = "red";
+    mensaje.style.color = "rgba(255, 0, 0,0.9)";
+    mensaje.style.fontWeight = "bold";
   } else if (sticker1 + sticker2 + sticker3 == 1) {
     mensaje.innerText = `Llevas ${sticker1 + sticker2 + sticker3} sticker`;
     mensaje.style.color = "black";
+    mensaje.style.fontWeight = "normal";
   } else {
     mensaje.innerText =
       "No puedes seleccionar números negativos. ¡Inténtalo otra vez!";
-    mensaje.style.color = "red";
+    mensaje.style.color = "rgba(255, 0, 0,0.9)";
+    mensaje.style.fontWeight = "bold";
   }
 }
 
@@ -62,12 +66,15 @@ function passVerification() {
 
   if (num1 == 9 && num2 == 1 && num3 == 1) {
     mensaje.innerText = "Password 1 correcto";
-    mensaje.style.color = "green";
+    mensaje.style.color = "rgba(0, 139, 12, 1)";
+    mensaje.style.fontWeight = "bold";
   } else if (num1 == 7 && num2 == 1 && num3 == 4) {
     mensaje.innerText = "Password 1 correcto";
-    mensaje.style.color = "green";
+    mensaje.style.color = "rgba(0, 139, 12, 1)";
+    mensaje.style.fontWeight = "bold";
   } else {
     mensaje.innerText = "Password incorrecto";
     mensaje.style.color = "red";
+    mensaje.style.fontWeight = "bold";
   }
 }

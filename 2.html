@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- PROBLEMA #2 -->
+    <div id="contenedor-problema2">
+      <h2 id="h2-Stickers">Selecciona un máximo de 10 stickers en total</h2>
+      <div id="stickersContainer">
+        <div class="contenedorSticker">
+          <img class="sticker" src="./assets/imgs/sticker_01.png" alt="" />
+          <p>Sticker Mushroom Skulls</p>
+          <div>
+            <label class="label-sticker" for="sticker1">Cantidad:</label>
+            <input class="skr" id="sticker1" type="number" min="0" max="10" />
+          </div>
+        </div>
+
+        <div class="contenedorSticker">
+          <img class="sticker" src="./assets/imgs/sticker_02.png" alt="" />
+          <p>Sticker Screaming Skulls</p>
+          <div>
+            <label class="label-sticker" for="sticker2">Cantidad:</label>
+            <input class="skr" id="sticker2" type="number" min="0" max="10" />
+          </div>
+        </div>
+
+        <div class="contenedorSticker">
+          <img class="sticker" src="./assets/imgs/sticker_03.png" alt="" />
+          <p>Sticker Third Eye Cat</p>
+          <div>
+            <label class="label-sticker" for="sticker3">Cantidad:</label>
+            <input class="skr" id="sticker3" type="number" min="0" max="10" />
+          </div>
+        </div>
+      </div>
+
+      <div id="div-mensaje">
+        <p>
+          ¡Haz Click en el botón para verificar la cantidad de stickers
+          seleccionados!
+        </p>
+        <p id="mensaje">Llevas 0 stickers</p>
+        <button id="btn-stickers" onclick="verificacion()">Verificar</button>
+        <button class="btn-volver" onclick="window.location.href='index.html'" id="btn-stickers">Volver al menú principal</button>
+      </div>
+    </div>
+
+  </body>
+</html>

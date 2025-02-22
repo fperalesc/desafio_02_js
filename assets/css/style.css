@@ -5,7 +5,12 @@
 }
 
 #contenedor-problema1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  height: 100vh;
 }
 
 #h2-Caja {
@@ -26,7 +31,12 @@
 }
 
 #contenedor-problema2 {
-  padding-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(187, 179, 219);
 }
 
 #h2-Stickers {
@@ -45,11 +55,6 @@
 .sticker {
   width: 300px;
   height: 300px;
-  transition: 0.5s;
-}
-
-.sticker:hover {
-  scale: 1.05;
 }
 
 .contenedorSticker {
@@ -61,6 +66,12 @@
   align-items: center;
   cursor: pointer;
   gap: 0.5rem;
+  border-radius: 15px;
+  transition: 0.25s;
+}
+
+.contenedorSticker:hover {
+  scale: 1.05;
 }
 
 #div-mensaje {
@@ -79,8 +90,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  justify-content: end;
+  padding-bottom: 8rem;
   gap: 1rem;
+  background-image: url(/assets/imgs/fondo_pass.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 
@@ -122,4 +137,48 @@
 
 #caja.tiritando {
   animation: tiritar 0.3s ease-in-out;
+}
+
+#btn-stickers {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: rgb(167, 163, 212);
+  color: black;
+}
+
+.skr {
+  background-color: rgb(167, 163, 212);
+}
+
+#h2-pass {
+  color: white  ;
+  text-shadow: 0px 0px 4px rgb(85, 80, 80);
+  text-align: center;
+}
+
+#btn-pass {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.salir {
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-weight: bold;
+  transition: 2s;
+}
+
+.salir:hover {
+  scale: 0.25;
+}
+
+.btn-volver {
+  margin-top: 1.5rem
 }
