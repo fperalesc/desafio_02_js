@@ -69,7 +69,7 @@ function passVerification() {
     mensaje.style.color = "rgba(0, 139, 12, 1)";
     mensaje.style.fontWeight = "bold";
   } else if (num1 == 7 && num2 == 1 && num3 == 4) {
-    mensaje.innerText = "Password 1 correcto";
+    mensaje.innerText = "Password 2 correcto";
     mensaje.style.color = "rgba(0, 139, 12, 1)";
     mensaje.style.fontWeight = "bold";
   } else {
